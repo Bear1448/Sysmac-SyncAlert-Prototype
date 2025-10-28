@@ -1,2 +1,17 @@
-*.smc2 filter=lfs diff=lfs merge=lfs -text
-*.zip filter=lfs diff=lfs merge=lfs -text
+
+# OMRON SYSMAC PROJECT PROTECTION RULES
+
+
+# Keep line endings exactly as-is (CRLF); prevent Git from normalizing
+* -text
+
+# Treat Sysmac project exports as binary (no text diff or merge)
+*.smc2 filter=lfs diff=none merge=binary
+*.smc  diff=none merge=binary
+*.zip  diff=none merge=binary
+
+# Optional: ignore temporary lock and metadata files from diff view
+locks/* linguist-generated=true
+exports/*.meta.json linguist-generated=true
+
+
