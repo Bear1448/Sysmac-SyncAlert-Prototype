@@ -1,2 +1,4 @@
-*.smc2 filter=lfs diff=lfs merge=lfs -text
-*.zip filter=lfs diff=lfs merge=lfs -text
+# Sysmac Studio Project exports (.smc2) are binary
+*.smc2 diff=none
+*.smc2 merge=binary
+*.smc2 -text
