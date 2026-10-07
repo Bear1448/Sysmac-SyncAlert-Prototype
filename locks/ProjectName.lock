@@ -1,8 +1,0 @@
-﻿{
-    "project":  "ProjectName",
-    "user":  "jperr",
-    "host":  "JPERRY",
-    "branch":  "feature/lock-test",
-    "start":  "2025-10-27T14:04:01.1421527-07:00",
-    "note":  "testing lock flow"
-}
